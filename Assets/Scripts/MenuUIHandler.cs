@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 
 [DefaultExecutionOrder(1000)]
 public class MenuUIHandler : MonoBehaviour
 {
     [SerializeField] private string nomeDoLevelDeJogo;
-
     public void StartNew()
     {
         SceneManager.LoadScene(nomeDoLevelDeJogo);  
